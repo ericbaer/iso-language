@@ -1,0 +1,18 @@
+name:           iso-language
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         eric
+synopsis:       ISO codes for territories, languages, and scripts
+
+library
+  hs-source-dirs:  src
+  build-depends:
+                   base >=4
+  ghc-options:     -Wall
+  cpp-options:     -DGENERICS
+  extensions:
+  exposed-modules:
+                   Data.ISO.ISO639,
+                   Data.ISO.ISO3166,
+                   Data.ISO.ISO15924
